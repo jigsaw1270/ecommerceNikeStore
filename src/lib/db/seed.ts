@@ -71,8 +71,8 @@ async function seed() {
       if (!exists.length) await db.insert(sizes).values(row);
     }
 
-    log('Seeding brand: Nike');
-    const brand = insertBrandSchema.parse({ name: 'Nike', slug: 'nike', logoUrl: undefined });
+    log('Seeding brand: Premium Footwear');
+    const brand = insertBrandSchema.parse({ name: 'Premium Footwear', slug: 'premium-footwear', logoUrl: undefined });
     {
       const exists = await db.select().from(brands).where(eq(brands.slug, brand.slug)).limit(1);
       if (!exists.length) await db.insert(brands).values(brand);
@@ -102,7 +102,7 @@ async function seed() {
     const allGenders = await db.select().from(genders);
     const allColors = await db.select().from(colors);
     const allSizes = await db.select().from(sizes);
-    const nike = (await db.select().from(brands).where(eq(brands.slug, 'nike')))[0];
+    const premiumFootwear = (await db.select().from(brands).where(eq(brands.slug, 'premium-footwear')))[0];
     const shoesCat = (await db.select().from(categories).where(eq(categories.slug, 'shoes')))[0];
     const runningCat = (await db.select().from(categories).where(eq(categories.slug, 'running-shoes')))[0];
     const lifestyleCat = (await db.select().from(categories).where(eq(categories.slug, 'lifestyle')))[0];
@@ -115,7 +115,11 @@ async function seed() {
     }
 
     const sourceDir = join(process.cwd(), 'public', 'shoes');
-    const productNames = Array.from({ length: 15 }, (_, i) => `Nike Air Max ${i + 1}`);
+    const productNames = [
+      'Air Max Classic', 'Urban Runner Pro', 'Street Style Elite', 'Sport Performance X', 'Comfort Walk Plus',
+      'Athletic Boost', 'Casual Comfort', 'Running Edge', 'Lifestyle Premium', 'Training Pro Max',
+      'City Walker', 'Sport Fusion', 'Daily Comfort', 'Active Lifestyle', 'Performance Elite'
+    ];
 
     const sourceImages = [
       'shoe-1.jpg','shoe-2.webp','shoe-3.webp','shoe-4.webp','shoe-5.avif',
@@ -135,7 +139,7 @@ async function seed() {
         description: desc,
         categoryId: catPick?.id ?? null,
         genderId: gender?.id ?? null,
-        brandId: nike?.id ?? null,
+        brandId: premiumFootwear?.id ?? null,
         isPublished: true,
       });
 
@@ -151,7 +155,7 @@ async function seed() {
         for (const size of sizeChoices) {
           const priceNum = Number((randInt(80, 200) + 0.99).toFixed(2));
           const discountedNum = Math.random() < 0.3 ? Number((priceNum - randInt(5, 25)).toFixed(2)) : null;
-          const sku = `NIKE-${insertedProduct.id.slice(0, 8)}-${color.slug.toUpperCase()}-${size.slug.toUpperCase()}`;
+          const sku = `PF-${insertedProduct.id.slice(0, 8)}-${color.slug.toUpperCase()}-${size.slug.toUpperCase()}`;
           const variant = insertVariantSchema.parse({
             productId: insertedProduct.id,
             sku,

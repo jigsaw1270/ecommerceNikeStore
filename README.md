@@ -1,187 +1,173 @@
-<div align="center">
-  <br />
-    <a href="https://youtu.be/fZdTYswuZjU" target="_blank">
-      <img src="public/readme/hero.webp" alt="Project Banner">
-    </a>
-  <br />
+# E-Commerce Store
 
-  <div>
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6"/>
-    <img alt="Static Badge" src="https://img.shields.io/badge/Devin AI-FFF?style=for-the-badge&logo=devin&logoColor=white">
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-    <br/>
-    <img src="https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=next.js&logoColor=white">
-    <img src="https://img.shields.io/badge/-Better Auth-black?style=for-the-badge&logoColor=white&logo=betterauth&color=black"/>
-    <img src="https://img.shields.io/badge/-Drizzle-black?style=for-the-badge&logoColor=C5F74F&logo=drizzle&color=black"/>
+A modern, full-stack e-commerce platform built with cutting-edge web technologies. This project features a clean, responsive design with robust authentication, product management, and a seamless shopping experience.
 
-  </div>
+## 🚀 Features
 
-  <h3 align="center">Nike Ecommerce w/ Devin AI</h3>
+- **Modern UI/UX**: Built with Next.js 15 and TailwindCSS for a responsive, mobile-first design
+- **Authentication**: Secure user authentication with Better Auth supporting email/password and social logins
+- **Product Management**: Dynamic product catalog with filtering, sorting, and search capabilities
+- **Shopping Cart**: Persistent cart functionality with state management via Zustand
+- **Database**: PostgreSQL with Drizzle ORM for type-safe database operations
+- **Image Optimization**: Next.js Image component for optimized image loading
+- **TypeScript**: Fully typed codebase for better development experience
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/watch?v=XUkNR-JfHwo" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
-</div>
+## 🛠️ Tech Stack
 
-## 📋 <a name="table">Table of Contents</a>
+- **Frontend**: Next.js 15, React 19, TypeScript, TailwindCSS
+- **Backend**: Next.js API Routes, Drizzle ORM
+- **Database**: PostgreSQL (Neon compatible)
+- **Authentication**: Better Auth
+- **State Management**: Zustand
+- **Styling**: TailwindCSS
+- **Icons**: Lucide React
+- **Development**: ESLint, TypeScript
 
-1. ✨ [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🔗 [Assets](#links)
-6. 🚀 [More](#more)
+## 📋 Prerequisites
 
-## 🚨 Tutorial
+Make sure you have the following installed:
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="" target="_blank"><b>JavaScript Mastery</b></a>.
-
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
-
-<a href="https://youtu.be/fZdTYswuZjU" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
-
-## <a name="introduction">✨ Introduction</a>
-
-Nike-style eCommerce built with Devin AI, Next.js, Drizzle ORM, and Better Auth. In this project, you’ll master prompting as Devin helps generate sleek product pages powered by Next.js 15, TypeScript, and TailwindCSS. The backend runs on Neon PostgreSQL with Drizzle ORM, authentication is handled with Better Auth, and Zustand manages state — all packaged in a clean, modular UI to help you ship faster.
-
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **50k+** members. It's a place where people help each other out.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- **[Better Auth](https://www.better-auth.com/)** is a framework-agnostic authentication and authorization library for TypeScript. It provides built-in support for email and password authentication, social sign-on (Google, GitHub, Apple, and more), and multi-factor authentication, simplifying user authentication and account management.
-
-- **[Devin AI](https://docs.devin.ai/get-started/devin-intro)** is an autonomous AI software engineer by Cognition Labs that independently plans, writes, debugs, and deploys full applications from natural language prompts. It integrates with tools like Slack, Linear, and Jira to manage tasks and pull requests, and learns new technologies on the fly by reading documentation.
-
-- **[Drizzle ORM](https://orm.drizzle.team/)** is a lightweight and performant TypeScript ORM designed with developer experience in mind. It provides a seamless interface between application code and database operations while maintaining high performance and reliability.
-
-- **[Neon](https://neon.com/)** is a fully managed, serverless PostgreSQL database platform. It offers features like instant provisioning, autoscaling, and database branching, enabling developers to build scalable applications without managing infrastructure.
-
-- **[Next.js](https://nextjs.org/docs)** is a powerful React framework for building full-stack web applications. It simplifies development with features like server-side rendering, static site generation, and API routes, enabling developers to focus on building products and shipping quickly.
-
-- **[TailwindCSS](https://tailwindcss.com/)** is a utility-first CSS framework that allows developers to build custom, responsive designs quickly without leaving their HTML. It provides pre-defined classes for layout, typography, colors, and more.
-
-- **[TypeScript](https://www.typescriptlang.org/)** is a superset of JavaScript that adds static typing, providing better tooling, code quality, and error detection for developers. It is ideal for building large-scale applications and enhances the development experience.
-
-- **[Zustand](https://zustand-demo.pmnd.rs)** is a minimal, hook-based state management library for React. It lets you manage global state with zero boilerplate, no context providers, and excellent performance through selective state subscriptions.
-
-## <a name="features">🔋 Features</a>
-
-👉 **Landing Page**: A fast, engaging homepage that introduces your brand and products with smooth animations and clear calls to action.
-
-👉 **Product Listing Page**: Browse all products with filters, sorting, and real-time availability—powered by Devin AI-generated content for dynamic updates.
-
-👉 **Product Details Page**: Detailed product info, images, and reviews with AI-enhanced descriptions to help customers make confident buying decisions.
-
-👉 **Auth Pages**: Secure and seamless user signup, login, and password recovery using Better Auth, ensuring smooth access without backend hassles.
-
-And many more, including code architecture and reusability.
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
+- [Node.js](https://nodejs.org/en) (version 18 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 - [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
+- PostgreSQL database (local or cloud-hosted like Neon)
 
-**Cloning the Repository**
+## 🚀 Quick Start
 
-```bash
-git clone https://github.com/JavaScript-Mastery-Pro/e-commerce.git
-cd e-commerce
-```
+1. **Clone the repository**
+\\\ash
+git clone https://github.com/jigsaw1270/ecommerceNikeStore.git
+cd ecommerceNikeStore
+\\\
 
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
+2. **Install dependencies**
+\\\ash
 npm install
-```
+\\\
 
-**Set Up Environment Variables**
+3. **Set up environment variables**
+\\\ash
+cp .env.local.example .env.local
+\\\
 
-Create a new file named `.env` in the root of your project and add the following content:
+Edit \.env.local\ with your actual values:
+- \DATABASE_URL\: Your PostgreSQL connection string
+- \NEXTAUTH_SECRET\: A random string for JWT signing
+- \NEXTAUTH_URL\: Your application URL (http://localhost:3000 for development)
 
-```env
-# Database
-DATABASE_URL="postgresql://username:password@host:port/database"
+4. **Set up the database**
+\\\ash
+# Generate database migrations
+npm run db:generate
 
-# Better Auth
-BETTER_AUTH_SECRET="your-secret-key-here"
-BETTER_AUTH_URL="http://localhost:3000"
+# Push schema to database
+npm run db:push
 
-# GitHub OAuth (optional)
-GITHUB_CLIENT_ID=""
-GITHUB_CLIENT_SECRET=""
+# Seed the database with sample data
+npm run db:seed
+\\\
 
-# Google OAuth (optional)
-GOOGLE_CLIENT_ID=""
-GOOGLE_CLIENT_SECRET=""
-```
-
-Replace the placeholder values with your credentials. You can get these by signing up at: [**NeonDB**](https://neon.com/), [**Better-Auth**](https://www.better-auth.com/).
-
-**Running the Project**
-
-```bash
+5. **Start the development server**
+\\\ash
 npm run dev
-```
+\\\
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🗄️ Database Commands
+
+\\\ash
+# Generate new migration files
+npm run db:generate
+
+# Push schema changes to database
+npm run db:push
+
+# Run database migrations
+npm run db:migrate
+
+# Open Drizzle Studio (database GUI)
+npm run db:studio
+
+# Seed database with sample data
+npm run db:seed
+\\\
 
 ## 📁 Project Structure
 
-```
-src/
-├── app/
-│   ├── api/auth/[...all]/route.ts  # Better Auth API routes
-│   └── page.tsx                    # Homepage
-├── lib/
-│   ├── auth/
-│   │   └── index.ts               # Better Auth configuration
-│   └── db/
-│       ├── index.ts               # Database connection
-│       └── schema.ts              # Database schema
-└── store/
-    ├── auth.ts                    # Authentication state
-    └── cart.ts                    # Shopping cart state
-```
+\\\
+├── src/
+│   ├── app/                    # Next.js app directory
+│   │   ├── (auth)/            # Authentication routes
+│   │   ├── (root)/            # Main application routes
+│   │   ├── api/               # API routes
+│   │   └── globals.css        # Global styles
+│   ├── components/            # Reusable UI components
+│   ├── lib/                   # Utility functions and configurations
+│   │   ├── actions/           # Server actions
+│   │   ├── auth/             # Authentication configuration
+│   │   ├── db/               # Database configuration and schema
+│   │   └── utils/            # Helper utilities
+│   └── store/                # Zustand state management
+├── public/                   # Static assets
+├── drizzle/                 # Database migrations
+└── static/                  # Upload directory
+\\\
 
-## 🗄️ Database Schema
+## 🔧 Configuration
 
-The application includes the following tables:
+### Database Schema
 
-- **users**: User accounts and profiles
-- **sessions**: User sessions for Better Auth
-- **accounts**: OAuth accounts and credentials
-- **verifications**: Email verification tokens
-- **products**: Product catalog
-- **orders**: Customer orders
-- **order_items**: Individual items in orders
+The application includes the following main entities:
+- Users and Authentication
+- Products and Variants
+- Categories and Brands
+- Shopping Cart
+- Orders and Payments
+- Reviews and Wishlists
 
-## <a name="links">🔗 Assets</a>
+### Authentication
 
-Assets and snippets used in the project can be found in the **[video kit](https://jsm.dev/nikecom-kit)**.
+Configured with Better Auth supporting:
+- Email/Password authentication
+- Session management
+- Cookie-based sessions
+- Configurable social providers
 
-<a href="https://jsm.dev/nikecom-kit" target="_blank">
-  <img src="public/readme/videokit.webp" alt="Video Kit Banner">
-</a>
+## 🚀 Deployment
 
-## <a name="more">🚀 More</a>
+### Vercel (Recommended)
 
-**Advance your skills with Next.js Pro Course**
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Configure environment variables in Vercel dashboard
+4. Deploy automatically on every push
 
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with
-detailed explanations, cool features, and exercises to boost your skills. Give it a go!
+### Other Platforms
 
-<a href="https://jsm.dev/nikecom-jsmpro" target="_blank">
-  <img src="public/readme/jsmpro.webp" alt="Project Banner">
-</a>
-# ecommerceNikeStore
+The application is compatible with any Node.js hosting platform:
+- Railway
+- Render
+- Digital Ocean
+- AWS
+- Google Cloud Platform
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (\git checkout -b feature/amazing-feature\)
+3. Commit your changes (\git commit -m 'Add amazing feature'\)
+4. Push to the branch (\git push origin feature/amazing-feature\)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🐛 Issues
+
+If you encounter any issues or have questions, please create an issue in the GitHub repository.
+
+## ⭐ Support
+
+If you find this project helpful, please consider giving it a star on GitHub!
